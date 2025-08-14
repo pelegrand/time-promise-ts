@@ -36,7 +36,7 @@ jobs:
 
       # Build
       - name: Build
-        run: npm run build
+        run: npx tsc
 
       # Test
       - name: Test
