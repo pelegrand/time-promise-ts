@@ -1,0 +1,49 @@
+name: 🚀 Bump & Publish to npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bump-version-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # needed to push back changes
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: npm install
+
+      # Bump package.json version (patch by default)
+      - name: Bump version
+        run: |
+          npm version patch -m "ci: bump version to %s [skip ci]"
+
+      # Build
+      - name: Build
+        run: npm run build
+
+      # Test
+      - name: Test
+        run: npm test
+
+      # Publish
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # Push updated package.json & git tag back to repo
+      - name: Push changes
+        run: |
+          git push --follow-tags
