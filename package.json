@@ -9,7 +9,7 @@
     "url": "git+https://github.com/pelegrand/time-promise-ts.git"
   },
   "scripts": {
-    "test": "node --loader ts-node/esm tests/index.test.ts"
+    "test": "npx ts-node tests/index.test.ts"
   },
   "keywords": [
     "sleep",
