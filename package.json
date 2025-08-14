@@ -1,0 +1,25 @@
+{
+  "name": "time-promise-ts",
+  "version": "1.0.0",
+  "description": "Lightweight async time utilities for TypeScript (sleep, timeout, retry, waitUntil, debounceAsync).",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node --loader ts-node/esm tests/index.test.ts"
+  },
+  "keywords": [
+    "sleep",
+    "timeout",
+    "retry",
+    "waitUntil",
+    "debounce",
+    "typescript",
+    "async",
+    "promise"
+  ],
+  "author": "Paul-Emmanuel Legrand",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
