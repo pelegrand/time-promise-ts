@@ -1,4 +1,4 @@
-# ⏱️ time-promises-ts
+# time-promises-ts
 
 [![npm version](https://img.shields.io/npm/v/time-promises-ts.svg)](https://www.npmjs.com/package/time-promises-ts)
 [![npm downloads](https://img.shields.io/npm/dm/time-promises-ts.svg)](https://www.npmjs.com/package/time-promises-ts)
@@ -8,7 +8,7 @@ It provides simple yet powerful helpers like `sleep`, `timeout`, `retry`, `waitU
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 npm install time-promises-ts
