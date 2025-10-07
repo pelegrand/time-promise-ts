@@ -23,3 +23,21 @@ It provides a setouts, retries, conditional waits, and debounced async functions
 
 ```bash
 npm install time-promise-ts
+```
+## 🧪 Usage Examples
+
+Here are practical examples of how to use each helper provided by `time-promises-ts`:
+
+---
+
+### 💤 `sleep(ms: number): Promise<void>`
+
+Pauses execution for a specified number of milliseconds.
+
+```JS
+import { sleep } from 'time-promises-ts';
+
+await sleep(1000);
+```
+
+
