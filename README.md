@@ -1,14 +1,25 @@
-# time-promises-ts
+# ⏱️ time-promises-ts
 
-[![npm version](https://img.shields.io/npm/v/time-promises-ts.svg)](https://www.npmjs.com/package/time-promises-ts)
-[![npm downloads](https://img.shields.io/npm/dm/time-promises-ts.svg)](https://www.npmjs.com/package/time-promises-ts)
+[![npm version](https://img.shields.io/npm/v/time-promise-ts.svg)](https://www.npmjs.com/package/time-promise-ts)
+[![npm downloads](https://img.shields.io/npm/dm/time-promise-ts.svg)](https://www.npmjs.com/package/time-promise-ts)
 
-**time-promises-ts** is a tiny, zero-dependency utility library for handling **time-based operations** with `Promise` in TypeScript.  
-It provides simple yet powerful helpers like `sleep`, `timeout`, `retry`, `waitUntil`, and `debounceAsync`.
+TypeScript utility library designed to simplify **time-based asynchronous operations** using `Promise`.
+
+It provides a setouts, retries, conditional waits, and debounced async functions.
 
 ---
 
-## Installation
+## ✨ Features
+
+- **`sleep(ms)`** – Pauses execution for a given number of milliseconds.
+- **`timeout(promise, ms)`** – Rejects a promise if it doesn't resolve within the specified time.
+- **`retry(fn, options)`** – Retries an async function with customizable strategy (attempts, delay, etc.).
+- **`waitUntil(conditionFn, options)`** – Waits until a condition becomes true, checking periodically.
+- **`debounceAsync(fn, delay)`** – Creates a debounced version of an async function.
+
+---
+
+## 📦 Installation
 
 ```bash
-npm install time-promises-ts
+npm install time-promise-ts
