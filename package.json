@@ -1,6 +1,6 @@
 {
   "name": "time-promise-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Lightweight async time utilities for TypeScript (sleep, timeout, retry, waitUntil, debounceAsync).",
   "main": "dist/index.js",
   "homepage": "https://github.com/pelegrand/time-promise-ts",
